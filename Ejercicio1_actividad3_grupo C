@@ -1,0 +1,33 @@
+#include <iostream>
+#include <fstream>
+#include<string>
+using namespace std;
+int main(){
+    ifstream archivo ("promedio.txt");
+    float n1,n2,n3,n4,n5;
+    float promedio;
+    int contador=0;
+    cout<<"Ingreso de notas \n";
+    cout<<"Nota 1: ";
+    cin>>n1;
+    cout<<"Nota 2: ";
+    cin>>n2;
+    cout<<"Nota 3: ";
+    cin>>n3;
+    cout<<"Nota 4: ";
+    cin>>n4;
+    cout<<"Nota 5: ";
+    cin>>n5;
+
+   promedio=(n1+n2+n3+n4+n5)/5;
+   cout<<"Su promedio es de: "<<promedio<<endl;
+  if (promedio >= 9) {
+        cout <<"Promedio Excelente" << endl;
+    } else if (promedio >= 7) {
+        cout << "Promedio Bueno" << endl;
+    } else {
+        cout << " Promedio Regular" << endl;
+    }
+    
+   return 0;
+}
